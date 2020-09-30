@@ -17,3 +17,10 @@ function spinWords(palavra){
     }
     return palavraSeparada.join(' ');
 }
+
+/*Outra forma de fazer*/
+function spinWords2(words){
+    return words.split(' ').map(function (word) {
+      return (word.length > 4) ? word.split('').reverse().join('') : word;
+    }).join(' ');
+  }
