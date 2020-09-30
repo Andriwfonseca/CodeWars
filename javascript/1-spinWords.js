@@ -5,6 +5,15 @@
    resultado: arvalap de ocnic sartel e não sonem */
 
 function spinWords(palavra){    
+
     let palavraSeparada = palavra.split(" ");
-    return palavraSeparada
+
+    for(let x = 0;x < palavraSeparada.length;x++){
+        if (palavraSeparada[x].length > 4){
+            palavraSeparada[x] = palavraSeparada[x].split('').reverse().join('');
+        }
+        
+        
+    }
+    return palavraSeparada.join(' ');
 }
